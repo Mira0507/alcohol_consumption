@@ -158,6 +158,7 @@ alcohol_consumption_by_income <-
         geom_bar(stat = "identity", col = "black") + 
         facet_grid(.~ Gender) + 
         ylab("Alcohol Consumption per Capita (Liters)") +
+        xlab("Income") + 
         ggtitle("Alcohol Consumption by Country of Income and Gender in 2016") + 
         theme(axis.text.x = element_blank(), 
               axis.ticks.x = element_blank(),
@@ -171,7 +172,7 @@ alcohol_consumption_by_income_by_gender <-
         ggplot(gen_alc_income4, aes(x = Income_Class, y = Female_per_Male, fill = Income_Class)) + 
         geom_bar(stat = "identity", col = "black") + 
         ylab("Relative Alcohol Consumption (Female per Male, %)") + 
-        xlab("Income Class") + 
+        xlab("Income") + 
         ggtitle("Alcohol Consumption of Female Relative to Male by Income") +
         theme(axis.text.x = element_blank(), 
               axis.ticks.x = element_blank(),
@@ -183,7 +184,7 @@ alcohol_consumption_by_income_by_gender <-
 # plots for alcohol consumption by country 
 alcohol_consumption_female_vs_male <-
         ggplot(gen_alc_country3, aes(x = Female, y = Male)) + 
-        geom_point(alpha = 0.5, size = 2, col = "#0000FF") +
+        geom_point(alpha = 0.5, size = 2, col = "black") +
         geom_smooth(se = FALSE, method = "lm", col = "red") + 
         theme(panel.background = element_blank(),
               axis.line.x = element_line("black"),
