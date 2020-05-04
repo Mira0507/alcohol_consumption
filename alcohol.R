@@ -191,7 +191,7 @@ alcohol_consumption_female_vs_male <-
               axis.line.y = element_line("black")) + 
         xlab("Female (Liters per Capita)") + 
         ylab("Male (Liters per Capita)") + 
-        ggtitle("Gender Comparison on Alcohol Consumption in 187 Countries (2016)")
+        ggtitle("Gender and Alcohol Consumption in 187 Countries")
 
 # R^2 = 0.96
 gender_cor <- cor(gen_alc_country3$Female, gen_alc_country3$Male)
