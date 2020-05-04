@@ -159,7 +159,7 @@ alcohol_consumption_by_income <-
         facet_grid(.~ Gender) + 
         ylab("Alcohol Consumption per Capita (Liters)") +
         xlab("Income") + 
-        ggtitle("Alcohol Consumption by Country of Income and Gender in 2016") + 
+        ggtitle("Alcohol Consumption by Income and Gender in 2016") + 
         theme(axis.text.x = element_blank(), 
               axis.ticks.x = element_blank(),
               panel.background = element_rect(fill = "white"), 
